@@ -6,7 +6,7 @@
 #define HEIGHT 600.f  // height of main window
 using namespace std;
 
-const int MAXN = 600;  // >= HEIGHT, É¨ÃèÏß
+const int MAXN = 600;  // >= HEIGHT, æ‰«æçº¿
 
 // hide the console window
 #pragma comment( linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"" )
@@ -130,11 +130,11 @@ public:
 		if (root == NULL || root->next == NULL) return;
 
 		AET *p = root->next, *pstart = new AET, *pend = root;
-		pstart->next = root; //ÎªÁË²Ù×÷·½±ã£¬Ìí¼ÓÒ»¸öÍ·½áµã
+		pstart->next = root;
 		while (p != NULL)
 		{
 			AET *tmp = pstart->next, *pre = pstart;
-			while (tmp != p && p->x >= tmp->x) //ÕÒµ½²åÈëÎ»ÖÃ
+			while (tmp != p && p->x >= tmp->x)
 			{
 				tmp = tmp->next; pre = pre->next;
 			}
